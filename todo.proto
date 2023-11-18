@@ -8,6 +8,7 @@ service TodoService {
   rpc updateTodo(UpdateTodoDto) returns (Todo);
   rpc deleteTodo(DeleteTodoDto) returns (Todo);
   rpc getAllTodos(Empty) returns (Todos);
+  rpc streamTodos(Empty) returns (stream Todo);
   
 }
 
